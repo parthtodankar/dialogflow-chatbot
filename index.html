@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="canonical" href="https://https://demo.themesberg.com/landwind/" />
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellBeing - Chat</title>
+
+    
+    <!-- Favicon -->
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff; /* Set body background color to white */
+            /* font-family: 'Roboto', sans-serif; Change font family */
+            padding-top: 80px; /* Add space between header and body */
+        }
+        header {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+        .chat-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 0;
+        }
+        .chat-text {
+            max-width: 45%;
+            padding: 1rem;
+            background-color: #ffffff; /* Change text background to white */
+
+            margin-right: 2rem;
+            margin-bottom: 2rem; /* Add space between text and iframe */
+        }
+        .chat-iframe {
+            max-width: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            margin-top: 2rem; /* Add space between text and iframe */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Chatbot Section -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="chat-container max-w-screen-xl px-4 py-16 mx-auto">
+            <div class="chat-text">
+                <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Chat with kuku</h2>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Welcome to our chatbot! kuku is here to offer assistance and support, including guidance on mental health concerns. Don't hesitate to reach out with any questions or issues you may have.</p>
+                <img src="chat.svg" alt="Image Description">
+            </div>
+            <iframe class="chat-iframe" width="500" height="700" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/ae4a1339-ed7f-4a33-b432-8610ff292e51"></iframe>
+        </div>
+    </section>
+    <!-- End Chatbot Section -->
+    
+    <!-- Footer Section -->
+    <footer class="bg-white dark:bg-gray-800">
+        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+            <div class="text-center">
+                <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
+                    WellBeing
+                </a>
+                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">An initiative by team [Matrix]
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+</body>
+
+</html>
